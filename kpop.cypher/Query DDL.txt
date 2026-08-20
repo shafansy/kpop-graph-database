@@ -12,7 +12,7 @@ FOR (al:Album) REQUIRE al.title IS UNIQUE;
 
 // Pastikan setiap lagu punya judul unik
 CREATE CONSTRAINT song_title_unique IF NOT EXISTS
-FOR (l:Lagu) REQUIRE l.title IS UNIQUE;
+FOR (s:Song) REQUIRE s.title IS UNIQUE;
 
 // Pastikan setiap tahun debut unik
 CREATE CONSTRAINT debut_year_unique IF NOT EXISTS
