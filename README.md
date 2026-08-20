@@ -1,4 +1,4 @@
-# K-Pop Knowledge Graph
+# K Pop Graph Database and Relationship Analysis
 ## Project Overview
 This project implements a **K-Pop Knowledge Graph** using **Neo4j** to represent and explore relationships between K-Pop artists, agencies, albums, songs, genres, fandoms, and debut years.
 The project applies graph database concepts to organize interconnected K-Pop data and uses **Cypher Query Language** to create, manage, query, and analyze the graph.
