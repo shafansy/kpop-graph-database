@@ -1,6 +1,6 @@
 / Pastikan setiap artist punya nama unik
 CREATE CONSTRAINT artist_name_unique IF NOT EXISTS
-FOR (g:Group) REQUIRE g.title IS UNIQUE;
+FOR (a:Artist) REQUIRE a.name IS UNIQUE;
 
 // Pastikan setiap agensi unik
 CREATE CONSTRAINT agency_name_unique IF NOT EXISTS
@@ -16,7 +16,7 @@ FOR (l:Lagu) REQUIRE l.title IS UNIQUE;
 
 // Pastikan setiap tahun debut unik
 CREATE CONSTRAINT debut_year_unique IF NOT EXISTS
-FOR (td:Tahun_Debut) REQUIRE td.year IS UNIQUE;
+FOR (td:TahunDebut) REQUIRE td.year IS UNIQUE;
 
 // Pastikan setiap fandom unik
 CREATE CONSTRAINT fandom_name_unique IF NOT EXISTS
