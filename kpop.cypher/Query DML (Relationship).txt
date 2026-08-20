@@ -261,8 +261,8 @@ WITH [
 ] AS data
 FOREACH (row IN data |
   MERGE (a:Artist {name: row[0]})
-  MERGE (l:Lagu {title: row[1]})
-  MERGE (a)-[:PERFORMS]->(l)
+  MERGE (s:Song {title: row[1]})
+  MERGE (a)-[:PERFORMS]->(s)
 );
 
 
@@ -308,125 +308,125 @@ FOREACH (pair IN pairs |
 
 
 //SONG ke GENRE
-MATCH (l:Lagu {title:"Sorry, Sorry"})
-MATCH (g:Genre {name:"R&B"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MATCH (s:Song {title:"Sorry, Sorry"})
+MERGE (g:Genre {name:"R&B"})
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"Super"})
+MATCH (s:Song {title:"Super"})
 MATCH (g:Genre {name:"EDM"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"Red Flavor"})
+MATCH (s:Song {title:"Red Flavor"})
 MATCH (g:Genre {name:"Pop / R&B"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"BBoom BBoom"})
+MATCH (s:Song {title:"BBoom BBoom"})
 MATCH (g:Genre {name:"Dance-pop"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"Love Scenario"})
+MATCH (s:Song {title:"Love Scenario"})
 MATCH (g:Genre {name:"Hip-Hop Ballad"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"DALLA DALLA"})
+MATCH (s:Song {title:"DALLA DALLA"})
 MATCH (g:Genre {name:"Dance-pop"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"Love Shot"})
+MATCH (s:Song {title:"Love Shot"})
 MATCH (g:Genre {name:"R&B"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"God's Menu"})
+MATCH (s:Song {title:"God's Menu"})
 MATCH (g:Genre {name:"Hip Hop"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"Fearless"})
+MATCH (s:Song {title:"Fearless"})
 MATCH (g:Genre {name:"Pop / Dance"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"Congratulations"})
+MATCH (s:Song {title:"Congratulations"})
 MATCH (g:Genre {name:"Pop- Rock"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"DARARI"})
+MATCH (s:Song {title:"DARARI"})
 MATCH (g:Genre {name:"R&B"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"Next Level"})
+MATCH (s:Song {title:"Next Level"})
 MATCH (g:Genre {name:"Electro-pop"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"Gee"})
+MATCH (s:Song {title:"Gee"})
 MATCH (g:Genre {name:"Dance-pop"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"Anti-Romantic"})
+MATCH (s:Song {title:"Anti-Romantic"})
 MATCH (g:Genre {name:"Pop / Ballad"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"ELEVEN"})
+MATCH (s:Song {title:"ELEVEN"})
 MATCH (g:Genre {name:"Pop / Dance"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"TT"})
+MATCH (s:Song {title:"TT"})
 MATCH (g:Genre {name:"Dance-pop"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"Deja Vu"})
+MATCH (s:Song {title:"Deja Vu"})
 MATCH (g:Genre {name:"Dance-pop"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"HIP"})
+MATCH (s:Song {title:"HIP"})
 MATCH (g:Genre {name:"R&B / Pop"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"Bang Bang Bang"})
+MATCH (s:Song {title:"Bang Bang Bang"})
 MATCH (g:Genre {name:"EDM / Hip-hop"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"Super Shy"})
+MATCH (s:Song {title:"Super Shy"})
 MATCH (g:Genre {name:"Pop / Jersey Club"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"Just Right"})
+MATCH (s:Song {title:"Just Right"})
 MATCH (g:Genre {name:"Hip Hop / Pop"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"Celebrity"})
+MATCH (s:Song {title:"Celebrity"})
 MATCH (g:Genre {name:"Dance-pop"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"You Are My Everything"})
+MATCH (s:Song {title:"You Are My Everything"})
 MATCH (g:Genre {name:"Ballad"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"I"})
+MATCH (s:Song {title:"I"})
 MATCH (g:Genre {name:"Pop / Ballad"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"NUNU NANA"})
+MATCH (s:Song {title:"NUNU NANA"})
 MATCH (g:Genre {name:"Hip Hop"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"ONLY"})
+MATCH (s:Song {title:"ONLY"})
 MATCH (g:Genre {name:"R&B / Ballad"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"Gashina"})
+MATCH (s:Song {title:"Gashina"})
 MATCH (g:Genre {name:"Pop / Dance"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"Heaven"})
+MATCH (s:Song {title:"Heaven"})
 MATCH (g:Genre {name:"R&B / Ballad"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"Vengeance"})
+MATCH (s:Song {title:"Vengeance"})
 MATCH (g:Genre {name:"R&B / Hip-Hop"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
-MATCH (l:Lagu {title:"Gotta Go"})
+MATCH (s:Song {title:"Gotta Go"})
 MATCH (g:Genre {name:"Pop / Dance"})
-MERGE (l)-[:HAS_GENRE]->(g);
+MERGE (s)-[:HAS_GENRE]->(g);
 
 
 // === ARTIST ke ALBUM ===
