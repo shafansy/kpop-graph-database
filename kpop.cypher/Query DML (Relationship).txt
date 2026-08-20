@@ -23,7 +23,7 @@ CREATE (a)-[:SIGNED_TO]->(ag);
 MATCH (a:Artist {name: "Stray Kids"}), (ag:Agency {name: "JYP Ent"})
 CREATE (a)-[:SIGNED_TO]->(ag);
 
-MATCH (a:Artist {name: "Le Sserafim"}), (ag:Agency {name: "Source Music"})
+MATCH (a:Artist {name: "LE SSERAFIM"}), (ag:Agency {name: "Source Music"})
 CREATE (a)-[:SIGNED_TO]->(ag);
 
 MATCH (a:Artist {name: "DAY6"}), (ag:Agency {name: "JYP Ent"})
@@ -196,7 +196,7 @@ WITH [
   ["EXO",2012],
   ["Stray Kids",2018],
   ["LE SSERAFIM",2022],
-  ["DAY-6",2015],
+  ["DAY6",2015],
   ["Treasure",2020],
   ["aespa",2020],
   ["SNSD",2007],
@@ -237,7 +237,7 @@ WITH [
   ["EXO","Love Shot"],
   ["Stray Kids","God's Menu"],
   ["LE SSERAFIM","Fearless"],
-  ["DAY-6","Congratulations"],
+  ["DAY6","Congratulations"],
   ["Treasure","DARARI"],
   ["aespa","Next Level"],
   ["SNSD","Gee"],
@@ -278,7 +278,7 @@ WITH [
   ["EXO","EXO-L"],
   ["Stray Kids","Stay"],
   ["LE SSERAFIM","FEARNOT"],
-  ["DAY-6","My Day"],
+  ["DAY6","My Day"],
   ["Treasure","Teume"],
   ["aespa","MY"],
   ["SNSD","SONE"],
@@ -457,7 +457,7 @@ CREATE (a)-[:RELEASED]->(al);
 MATCH (a:Artist {name:"LE SSERAFIM"}), (al:Album {title:"Antifragile"})
 CREATE (a)-[:RELEASED]->(al);
 
-MATCH (a:Artist {name:"DAY-6"}), (al:Album {title:"The Day"})
+MATCH (a:Artist {name:"DAY6"}), (al:Album {title:"The Day"})
 CREATE (a)-[:RELEASED]->(al);
 
 MATCH (a:Artist {name:"Treasure"}), (al:Album {title:"The Second Step: Chapter One"})
