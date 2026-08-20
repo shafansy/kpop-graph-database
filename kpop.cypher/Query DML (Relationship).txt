@@ -38,7 +38,7 @@ CREATE (a)-[:SIGNED_TO]->(ag);
 MATCH (a:Artist {name: "SNSD"}), (ag:Agency {name: "SM Ent"})
 CREATE (a)-[:SIGNED_TO]->(ag);
 
-MATCH (a:Artist {name: "TXT"}), (ag:Agency {name: "BigHit Music"})
+MATCH (a:Artist {name: "Tomorrow X Together"}), (ag:Agency {name: "BigHit Music"})
 CREATE (a)-[:SIGNED_TO]->(ag);
 
 MATCH (a:Artist {name: "IVE"}), (ag:Agency {name: "Starship Ent"})
