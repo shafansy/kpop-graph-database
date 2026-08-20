@@ -8,7 +8,7 @@ CREATE (a)-[:SIGNED_TO]->(ag);
 MATCH (a:Artist {name: "Red Velvet"}), (ag:Agency {name: "SM Ent"})
 CREATE (a)-[:SIGNED_TO]->(ag);
 
-MATCH (a:Artist {name: "Momoland"}), (ag:Agency {name: "MLD ENt"})
+MATCH (a:Artist {name: "Momoland"}), (ag:Agency {name: "MLD Ent"})
 CREATE (a)-[:SIGNED_TO]->(ag);
 
 MATCH (a:Artist {name: "iKON"}), (ag:Agency {name: "YG Ent"})
