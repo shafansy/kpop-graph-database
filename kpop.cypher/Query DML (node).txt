@@ -107,7 +107,7 @@ MERGE (:Song {title:"ELEVEN", year:2021, genre:"Dance-pop"});
 MERGE (:Artist {name:"Twice", debut:2015, type:"Group"});
 MERGE (:Agency {name:"JYP Ent"});
 MERGE (:Fandom {name:"ONCE"});
-MERGE (:Album {title:"Twicetober: Lane 1", year:2016});
+MERGE (:Album {title:"Twicecoaster: Lane 1", year:2016});
 MERGE (:Song {title:"TT", year:2016, genre:"Dance-pop"});
 
 // ATEEZ
@@ -122,7 +122,7 @@ MERGE (:Artist {name:"MAMAMOO", debut:2014, type:"Group"});
 MERGE (:Agency {name:"RBW"});
 MERGE (:Fandom {name:"MooMoo"});
 MERGE (:Album {title:"Reality in BLACK", year:2019});
-MERGE (:Song {title:"Hip", year:2019, genre:"R&B / Pop"});
+MERGE (:Song {title:"HIP", year:2019, genre:"R&B / Pop"});
 
 // BIGBANG
 MERGE (:Artist {name:"BIGBANG", debut:2006, type:"Group"});
